@@ -84,8 +84,8 @@ except TypeError:
 
 # the actual setup routine
 setup(
-    name='madmom',
-    version=version,
+    name='madmom-prebuilt',
+    version='0.17.post1',
     description='Python audio signal processing library',
     long_description=long_description,
     author='Department of Computational Perception, Johannes Kepler '
