@@ -55,7 +55,7 @@ package_data = [
 
 # some PyPI metadata
 classifiers = [
-    'Development Status :: 3 - Beta',
+    'Development Status :: 4 - Beta',
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
