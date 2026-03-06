@@ -25,7 +25,7 @@ jobs:
         env:
           CIBW_BUILD: "cp311-* cp312-* cp313-*"
           CIBW_SKIP: "*-musllinux_* *-manylinux_i686 *_ppc64le *_s390x *_aarch64 *-win32"
-          CIBW_BEFORE_BUILD: "pip install cython 'numpy>=1.22'"
+          CIBW_BEFORE_BUILD: "pip install cython numpy"
           CIBW_BUILD_VERBOSITY: 1
 
       - uses: actions/upload-artifact@v4
@@ -42,7 +42,7 @@ jobs:
           submodules: recursive
 
       - name: Install build dependencies
-        run: pip install cython 'numpy>=1.22'
+        run: pip install cython numpy
 
       - name: Build sdist
         run: pipx run build --sdist
